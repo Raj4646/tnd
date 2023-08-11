@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 50px 80px;
+  max-width: 350px;
+  max-height: 400px; /* Adjust to your preference */
+  background-color: #252525;
+}
+.title {
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+  background: linear-gradient(to right, #4caf50, #f44336);
+  background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+/* Button styling */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+}
+
+/* Friendly mode button */
+.btn.friendly {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* Challenging mode button */
+.btn.challenging {
+  background-color: #ff9900;
+  color: #ffffff;
+}
+
+/* Adult mode button */
+.btn.adult {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.btn.truth {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  /* Dare button for dark theme */
+  .btn.dare {
+    background-color: #f44336;
+    color: #fff;
+  }
+
+.go-home{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.question{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+@media only screen and (max-width: 600px){
+    .question{
+        font-size: 1.5rem;
+    }
+}
